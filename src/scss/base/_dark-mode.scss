@@ -1,0 +1,26 @@
+.dark-mode-on {
+    background-color: #121212;
+    color: $blanco;
+    p, a {
+        color: $blanco;
+    }
+    h1, h2, h3, h4 {
+        color: $gris;
+    }
+    .anuncio {
+        background-color: darken($grisOscuro, 10%);
+        .precio {
+            color: $verde;
+        }
+        li img {
+            filter: invert(100%);
+        }
+    }
+    .formulario {
+        input:not([type="submit"]), textarea, select {
+            background-color: darken($grisOscuro, 10%);
+            color: $blanco;
+        }
+    }
+}
+
